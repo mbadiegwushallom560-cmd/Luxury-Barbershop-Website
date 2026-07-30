@@ -580,7 +580,7 @@ footer{
     align-items: center;
 }
 
-h1{
+#contact-header{
     color: var(--gold-light);
     font-size: 3rem;
     text-align: center;
@@ -660,7 +660,7 @@ form{
 
     background: goldenrod;
 
-    transform:translateY(-2px);
+    transform:translateY(-5px);
 }
 
 .contact-logo img{
@@ -669,10 +669,15 @@ form{
 
 @media (max-width: 768px) {
     .input-group input, textarea, select{
-        font: .4rem;
+        font-size: .8rem;
     }
 
     .input-group label{
-        font-size: .6rem;
+        font-size: 1rem;
+    }
+
+    #contact-header{
+        font-size: 1.7rem;
+        font-weight: 700;
     }
 }
