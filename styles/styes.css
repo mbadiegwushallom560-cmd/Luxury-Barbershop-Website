@@ -40,6 +40,19 @@ nav{
     width: 100%;
 }
 
+nav p a{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    /* animation */
+    transition: all 0.3s ease-in-out;
+}
+
+nav p a:hover{
+    color: var(--gold);
+}
+
 main{
     padding-top: 8rem;
 }
@@ -146,7 +159,7 @@ h2{
     font-size: 2rem;
 }
 
-button{
+.hero-button{
     background-color: var(--gold);
     color: var(--black);
     border-radius: 10px;
@@ -536,4 +549,127 @@ footer{
         padding-top: 1rem;
     }
 
+}
+
+
+
+/* CONTACT */
+.contacts-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    gap: 1rem;
+    padding: 2em;
+    width: min(700px, 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.input-group{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+h1{
+    color: var(--gold-light);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.input-group label{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-container p{
+    font-size: medium;
+    color: var(--border);
+    text-align: center;
+}
+
+.input-group input, textarea, select{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .9rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+
+    /* animation */
+     transition:
+        border-color .25s,
+        box-shadow .25s;
+}
+
+.gender{
+    display: flex;
+    gap: 1rem;
+}
+
+.input-group input:focus, textarea:focus{
+
+    border-color:var(--gold-light);
+
+    box-shadow:0 0 0 2px var(--gold-light);
+}
+
+/* button */
+
+.contact-btn{
+
+    padding:1rem;
+
+    border:none;
+
+    background-color: var(--gold);
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        background .25s,
+        transform .25s;
+}
+
+.contact-btn:hover{
+
+    background: goldenrod;
+
+    transform:translateY(-2px);
+}
+
+.contact-logo img{
+    border-radius: 50%;
+}
+
+img{
+    height: 2rem;
+    max-width: 5.7rem;
 }
