@@ -159,7 +159,7 @@ h2{
     font-size: 2rem;
 }
 
-.hero-button{
+.hero-button, a{
     background-color: var(--gold);
     color: var(--black);
     border-radius: 10px;
@@ -187,9 +187,7 @@ figcaption{
     font-weight: 600;
 }
 
-
-
-button:hover{
+.hero-button:hover{
     animation: scale .3s ease-in-out;
     color: var(--black-light);
 }
@@ -669,7 +667,12 @@ form{
     border-radius: 50%;
 }
 
-img{
-    height: 2rem;
-    max-width: 5.7rem;
+@media (max-width: 768px) {
+    .input-group input, textarea, select{
+        font: .4rem;
+    }
+
+    .input-group label{
+        font-size: .6rem;
+    }
 }
